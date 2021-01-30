@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Search Movies Page</title>
+<style>
+  
+</style>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="bg-black">
+
+  <header>
+    <div class="w-full p-6 border-b-2 border-gray-700 border-solid">
+        <form id="searchMovieForm" class="w-10/12 mx-auto">
+            <input type="text" placeholder="Search.." id="searchInput" name="search" class="w-full p-3 bg-gray-700 rounded bg-transparent text-white focus:outline-none">
+           
+          </form>
+    </div>
+  </header>
+    
+  <div id="moviesContainer" class="flex flex-wrap  w-full mt-10 "></div>
+
+  <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="searchMovies.js"></script>
+</body>
+</html>

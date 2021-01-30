@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Movies Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css"
+      integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.0/tailwind.min.css"
+      integrity="sha256-CAI/7ThhltsmP2L2zKBYa7FknB3ZwFbD0nqL8FCdxdc="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="landingPage.css">
+  </head>
+
+  <body class="bg-black bg-opacity-95">
+    <header class="fixed top-0 z-10 w-full">
+      <nav class="flex items-center bg-black p-3 flex-wrap">
+        <a href="#" class="p-2 mr-4 inline-flex items-center">
+          <i class="material-icons text-5xl mr-2 text-white">
+              live_tv
+              </i>
+          <span class="text-xl text-white font-bold uppercase tracking-wide"
+            >Movies</span
+          >
+        </a>
+        <button
+          class="text-white inline-flex p-2 py-1 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler"
+          data-target="#navigation"
+        >
+          <i class="material-icons">menu</i>
+        </button>
+        <div
+          class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto"
+          id="navigation"
+        >
+          <div
+            class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto"
+          >
+            <a
+              href="#"
+              class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+            >
+              <span>Home</span>
+            </a>
+           
+            <a
+              href="#moviesSection"
+              class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+            >
+              <span>Movies List</span>
+            </a>
+           
+            <a
+              href="#contactUs"
+              class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+            >
+              <span>Contact Us</span>
+            </a>
+           <a href="searchMovies.html"
+           class="lg:inline-flex  px-3 py-1 rounded-full text-gray-400 border-gray-400 border-solid border-2"
+           >Search
+            <i class="material-icons text-gray-400 pl-6">search</i>
+           </a>
+            
+          </div>
+        </div>
+      </nav>
+    </header>
+
+<!----------------------------------------------------------------------------------------------->
+
+<div class="w-full relative bg-cover  mt-20" style="background-image: url('img/background.jpg');height: 570px;">
+  <div class="absolute flex flex-col items-center justify-center h-full w-full bg-black bg-opacity-50">
+      <h1 class=" text-white bg-transparent lg:text-5xl md:text-4xl sm-3xl text-2xl font-extrabold tracking-tighter font-serif">
+        All you need in one place</h1>
+
+      <h2 class="text-white bg-transparent lg:text-3xl md:text-2xl sm-text-2xl text-xl font-serif font-extrabold">Enjoy Watching</h2>
+      <a href="searchMovies.html" class="bg-red-700 text-white px-6 py-3 mt-2 rounded-full">Start Watch</a>  
+  </div>
+</div>
+
+<!---------------------------------------Movies Section------------------------------------------------------->
+
+  <div class="mt-10" id="moviesSection">
+    <h2 class="text-white text-3xl font-extrabold font-mono border-b-2 w-max border-white border-solid mx-auto">Movies</h2>
+    <div id="moviesList" class="flex flex-wrap  w-full mt-10 "></div>
+  </div>
+
+<!---------------------------------------Footer section-------------------------------------------------------->
+<footer class="flex md:flex-row md:justify-around items-center flex-col mt-20 bg-black " id="contactUs">
+  <div class="md:m-0 mx-auto">
+    <a href="#" class="p-2 mr-4 inline-flex items-center">
+      <i class="material-icons text-3xl mr-2 text-white">
+          live_tv
+          </i>
+      <span class="text-lg text-white font-bold uppercase tracking-wide"
+        >Movies</span
+      >
+    </a>
+  </div>
+
+  <div class="text-white text-2xl md:m-0 mx-auto ">
+    <a href="#" class="pr-7"><i class="fab fa-facebook-f "></i></a>
+    <a href="#" class="pr-7"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="pr-7"><i class="fab fa-youtube"></i></a>
+   <a href="#"> <i class="fab fa-instagram"></i></a>
+  </div>
+</footer>
+
+
+<!-----------------------------------script sction------------------------------------------------------------->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/1aaab1ccda.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="landingPage.js"></script>
+  </body>
+</html>
