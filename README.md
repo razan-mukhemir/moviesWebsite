@@ -1,10 +1,7 @@
 # moviesWebsite
 
 >>Project operation steps:
-1-download a project folder from github
-2-Decompress the folder
-3-then when you open project folder you will found public folder inside it
-4-open public folder you will found html page named landingPage.html
-5-double click on this page
 
-note:this is my brother laptop so his name will appear in reo
+1-download the project source code
+2-Decompress the .zip file
+3-Lounch the website by clicking on the landingPage.html located inside the public folder
