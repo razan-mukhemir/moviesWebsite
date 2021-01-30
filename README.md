@@ -5,4 +5,6 @@
 2-Decompress the folder
 3-then when you open project folder you will found public folder inside it
 4-open public folder you will found html page named landingPage.html
-5-double click on this page 
+5-double click on this page
+
+note:this is my brother laptop so his name will appear in reo
